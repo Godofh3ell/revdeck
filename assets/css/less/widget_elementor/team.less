@@ -1,0 +1,65 @@
+.jws_team {
+     .jws_team_inner { 
+        .jws_team_image {
+            position:relative;
+            overflow: hidden;
+            text-align: center;
+            img {
+               transition: 0.7s all;
+               width: 100%;
+            }
+        }
+        &:hover {
+            .jws_team_image {
+                img {
+                    transform: scale(1.15);
+                }
+            } 
+        }
+        .team_title {
+            margin-bottom: 7px;
+            margin-top: 17px;
+      }  
+      .team_job {
+        margin-bottom: 10px;
+      }
+  }
+
+    &.layout1 {
+        .jws_team_inner {
+            .jws_team_image {
+              border-radius: 100%;  
+            }
+            .jws_team_content {
+              text-align:center;  
+              
+              .team_description {
+                margin-bottom: 20px;
+              }
+              .team_icon {
+                    display: flex;
+                    justify-content: center;
+                    li {
+                        display: inline-block;
+                        text-align: center;
+                        margin: 0 6px;
+                        a {
+                            width: 40px;
+                            display: block;
+                            height: 40px;
+                            line-height: 40px;
+                            background: #e6eaed;
+                            font-size: 14px;
+                            border-radius: 50%;
+                            &:hover {
+                              background: var(--main);
+                              color: #ffffff;
+                            }
+                        }
+                    }
+                }
+            }
+          
+        }
+    }
+}

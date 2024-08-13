@@ -1,0 +1,102 @@
+#toplevel_page_variation-swatches-settings {
+    display:none !important;
+}
+.updated.woocommerce-message:not(.wc-connect) , .fw-brz-dismiss {
+    display: none;
+}
+td[data-export-label="Overrides"] , td[data-export-label="Overrides"] + td , td[data-export-label="Overrides"] + td  + td {
+    display: none;
+}
+td[data-export-label="Outdated Templates"] , td[data-export-label="Outdated Templates"] + td , td[data-export-label="Outdated Templates"] + td  + td {
+    display: none;
+}
+.elementor-control-_jws_custom_css {
+    display: none;
+}
+
+.elementor-panel .elementor-tab-control-jws_custom_tab a:before {
+    content: "\e916";  
+}
+.admin-livestream {
+    padding: 10px 0;
+}
+.admin-livestream .field-item {
+    margin-bottom: 20px;
+}
+
+.admin-livestream .field-item label {
+    display: block;
+    margin-bottom: 5px;
+}
+.admin-livestream .field-item input {
+     width: 100%;
+}
+
+.column-featured_image img {
+    width: 50px; height: auto;
+}
+
+.data-return span  {
+    color: #ffffff;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 5px; 
+}
+
+.data-return span.error {
+     background: #e5b440;
+}
+
+.data-return span.success {
+    background: #52b960;
+}
+
+#check_purchase_code input {
+    -webkit-text-security: disc;
+}
+
+.data-return > div {
+    background: #a5a5a5;
+    max-width: 400px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#check_purchase_code .note {
+    background: #f3db87d4;
+    max-width: 400px;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 20px;  
+}
+
+#check_purchase_code .note a {
+    margin-bottom: 13px;
+    display: block;
+}
+
+#check_purchase_code .note ul {
+    list-style: circle;
+    padding-left: 18px;
+}
+
+
+.menu-icon-movies .dashicons-video-alt3:before {
+    font-family: "jws_icon";
+    content: '\f3f6';
+}
+
+.menu-icon-tv_shows .dashicons-video-alt3:before {
+    font-family: "jws_icon";
+    content: '\f5d1';
+}
+
+.menu-icon-videos .dashicons-video-alt3:before {
+    font-family: "jws_icon";
+    content: '\f52c';
+}
+
+.redux-sidebar .redux-group-tab-link-a i[class^="jws-icon-"] {
+  font-size: 20px;
+  margin-left: -3px;
+}

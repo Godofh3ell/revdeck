@@ -1,0 +1,47 @@
+.elementor-widget-jws_image_carousel {
+    &.jws-content-align-at-center {
+        .jws-image_carousel-image{
+           align-content: center;
+           -webkit-align-content: center;
+        }
+    }
+    &.jws-content-align-at-bottom {
+        .jws-image_carousel-image {
+            align-content: flex-end;
+            -webkit-align-content: flex-end;
+        }
+    }
+}
+.jws-image_carousel {
+    &.grid {
+        justify-content: center;
+        -webkit-justify-content: center;  
+    }
+    .jws-image_carousel-image {
+        text-align:center;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+        a {
+            display: block;
+            width: 100%;
+            opacity: 0.5;
+            filter: grayscale(1);
+            &:hover {
+              opacity: 1;
+              filter: grayscale(0);  
+            }
+        }
+        img {
+            display:inline-block;
+            
+        }
+        .name {
+            font-weight:bold;
+            font-size:14px;
+            color: var(--heading);
+                margin-top: 20px;
+        }
+    }
+}

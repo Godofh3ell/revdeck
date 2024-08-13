@@ -1,0 +1,138 @@
+.dashboard-profile {
+    > div {
+        > h6 {
+            font-weight:400;
+            margin-bottom: 30px;
+        }
+    }
+    .login-width-social {
+        margin-top: 30px;
+        > h6 {
+            margin-bottom: 15px;
+        }
+        div.nsl-container.nsl-container-block .nsl-container-buttons {
+            display:block;
+            > a {
+               width: 300px;
+               margin-right: 10px;
+            }
+            b {
+              color: inherit;
+            }
+        }
+    }
+    .personal-information {
+       margin-bottom: 84px;
+      .information {
+         padding: 27px 45px;
+        background: #1a1d33;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 10px;
+      } 
+      .user-content {
+        display: flex;
+        align-items: center;
+      }
+      .button-custom {
+        background: #00031C;
+        color: #ffffff;
+        padding: 11px 20px;
+        display: block;
+        i {
+            font-size: 20px;
+            margin-right: 10px;
+        }
+      }
+      .user-meta {
+        > div {
+          display: inline-block; 
+          color: var(--heading); 
+          &:not(:last-child) {
+           border-right: 1px solid var(--body);
+            padding-right: 25px;
+            margin-right: 25px;
+          }
+        }
+        label {
+            margin-bottom: 0px;
+            color: var(--body);
+            margin-right: 10px;
+        }
+      }
+      .user-info {
+         > h5 {
+                margin-bottom: 17px;
+         }
+      }
+      .user-avatar {
+     
+            margin-right: 22px;
+  
+      }  
+    }
+    
+    
+    .account-security {
+        .setting-security {
+            padding: 4px 45px;
+            background: #1a1d33;
+            border-radius: 10px; 
+        }
+        .field-user {
+            color: var(--heading);
+            font-weight: bold;
+            padding: 30px 0;
+            position: relative;
+            padding-right: 70px;
+            &:not(:last-child) {
+                border-bottom:1px solid rgba(255, 255, 255, 0.2);
+            }
+            label {
+                font-weight:400;
+                margin-right: 8px;
+                margin-bottom: 0px;
+            }
+            button {
+                    background: transparent;
+                    border: 0;
+                    padding: 0;
+                    position: absolute;
+                    right: 0;
+                    top: 30px;
+            }
+        }
+    }
+    
+}
+
+@media(max-width:767px) {
+    .dashboard-profile {
+        .account-security {
+            .setting-security {
+              padding: 4px 15px;  
+            }
+        }
+        .personal-information {
+            .user-content {
+                margin-bottom: 20px;
+            }
+            .user-avatar {
+                margin-right: 10px;
+            }
+            .information {
+              padding: 20px 15px;
+              display: block;
+            }
+            .user-meta > div {
+                display: block;
+                &:not(:last-child) {
+                    border-right: 0;
+                    padding-right: 0;
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}

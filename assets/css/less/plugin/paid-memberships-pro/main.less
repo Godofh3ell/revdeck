@@ -1,0 +1,178 @@
+.pmpro_table {
+    border: 1px solid #333549;
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-sm);
+     margin-bottom: 26px;
+      color: var(--heading);
+     tr {
+        border-color:#333549;
+     }
+     thead {
+        
+        
+     }
+     .pmpro_actionlinks a {
+            font-weight: 700;
+     }
+}
+
+#pmpro_account .pmpro_box {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    > h5 {
+        margin-bottom:20px;
+    }
+}
+
+hr {
+      border-color: var(--border-color);
+}
+.pmpro_billing_wrap {
+    hr {
+        border-color:var(--border-color);
+        margin: 20px 0;
+    }
+    .pmpro_actions_nav:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+    ul {
+        padding: 0;
+        list-style-type: none;
+        li {
+            strong {
+                    color: var(--heading);
+            }
+        }
+    }
+}
+
+.pmpro_invoice_wrap {
+    .pmpro_actions_nav {
+        text-align: left;
+        > a:first-child {
+            margin-right:10px;
+        }
+    }
+    ul {
+    padding: 0;
+    list-style-type: none;
+    }
+}
+
+.pmpro_message {
+    margin-bottom: 20px;
+}
+
+#pmpro_pricing_fields {
+   background: var(--background-item);
+    padding: 20px;
+    margin: 20px 0;
+    border: 2px solid var(--main);
+    border-radius: 10px;
+    .pmpro_level_description_text {
+         ul {
+            padding-left:1em;
+         }
+    }
+    .pmpro_level_name_text {
+        margin-bottom: 10px;
+    }
+}
+
+.pmpro_cancel_wrap {
+    padding: 60px 0;
+    text-align: center;
+    .pmpro_actionlinks a:last-child {
+            color: var(--heading);
+            &:hover {
+                color:var(--main) !important;
+            }
+    }
+}
+
+form.pmpro_form .pmpro_checkout-fields .pmpro_checkout-field {
+    position: relative;
+    label {
+        font-weight: inherit;
+        color: var(--heading);
+        margin-bottom: 0.5rem;
+    }
+    input , select , textarea {
+        max-width: 100%;
+        width: 100% !important;
+    }
+    &.pmpro_payment-expiration {
+    .spacing {
+            display:inline-block;
+            padding: 0 10px;
+        }
+        .select2-container {
+            display:inline-block; 
+            width: auto !important; 
+        }
+        select {
+            width: auto !important;
+        }
+    }
+    input , select{
+       min-height: 48px;
+    }
+    .pmpro_asterisk {
+        position:absolute;
+        top: 5px;
+        right: 0;
+    }
+}
+#pmpro_payment_information_fields {
+    border: 1px solid var(--border-color);
+   padding: 25px 25px 25px;
+}
+
+#pmpro_form {
+    hr {
+        display:none;
+    }
+}
+
+
+body input.pmpro_error  {
+        background-color: var(--input-background) !important;
+}
+#pmpro_submit_span {
+   display: block;
+   margin-top: 25px;
+}
+
+.pmpro_confirmation_wrap {
+    > h4 {
+        margin: 20px 0;
+    }
+    > hr {
+       margin: 20px 0; 
+    }
+    strong {
+        color: var(--heading);
+    }
+    .pmpro_price_part-total {
+        border: 0;
+        margin: 0;
+        padding: 0;
+    }
+    .pmpro_actions_nav {
+        margin-top: 40px;
+    }
+}
+
+.pmpro_a-print {
+   color: var(--heading); 
+}
+
+
+@media(max-width:767px) {
+    .pmpro_invoice_details .pmpro_invoice-billing-address, .pmpro_invoice_details .pmpro_invoice-payment-method {
+         margin-bottom: 20px;
+    }
+}

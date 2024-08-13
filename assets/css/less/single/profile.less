@@ -1,0 +1,186 @@
+.profile-main {
+  padding: 70px var(--full-fd);
+    
+  .favorites-page {
+    .tv-shows-advanced-content .post-inner {
+        width:280px;
+    }
+    .movies_advanced_content .post-inner {
+        width:205px;
+      }
+  }
+  
+ h5.title-post-type {
+    margin-bottom: 25px;
+ }
+ 
+ .jws-movies_advanced-element {
+    margin-bottom: 30px;
+ }
+ .jws-tv-shows-advanced-element {
+    margin-bottom: 30px;
+ }
+  
+}
+
+.profile-header {
+    background: var(--background-item);
+    padding: 65px var(--full-fd) 0px;
+    .update-nember {
+        a {
+            padding: 10px 20px !important;
+            font-size: var(--font-size-sm) !important;
+            line-height: var(--line-height-sm) !important;
+            img {
+                margin-left: 5px;
+            }
+        }
+    }
+    .user-profile {
+        display: flex;
+        align-items: center;
+        max-width: 335px;
+        margin-right: 4rem;
+        .user-info {
+            width: calc(100% e("-") 70px);
+            h5 {
+                margin-bottom:5px;
+            }
+            p {
+                margin:0;
+                font-size: var(--font-size-sm);
+                line-height: var(--line-height-sm);
+            }
+            .level-nemberships {
+                color: var(--heading);
+                margin-top: 8px;
+            }
+        }
+        .user-avatar {
+            min-width: 70px;
+            width: 70px;
+            height: 70px;
+            padding: 3px;
+        }
+    }
+    .header-top {
+        margin: 0;
+    }
+    .header-bottom {
+        align-items: flex-end;
+        margin-top: 50px;
+        .nav {
+            padding: 0;
+            list-style-type: none;
+            font-weight: 500;
+            li {
+                display:inline-block;
+                &:not(:last-child) {
+                    margin-right:40px;
+                }
+                a {
+                    position: relative;
+                    padding-bottom: 11px;
+                    display: block;
+                }
+                .active {
+                    font-weight:700;
+                    &:after {
+                        content:"";
+                        height: 3px;
+                        width: 100%;
+                        left: 0;
+                        bottom: 0;
+                        position: absolute;
+                        background: linear-gradient(248.28deg, var(--btn-bgcolor) 9.539999999999999%, rgba(142, 97, 255, 0) 32.8%), radial-gradient(81.70999999999999% 279.87% at -16.57% -92%, var(--btn-bgcolor2) 28.69%, rgba(205, 219, 248, 0) 69.54000000000001%), var(--btn-bgcolor3);
+                    }
+                }
+            }
+        }
+        .button-custom {
+           background: #00031C;
+           color: #ffffff;
+           padding: 11px 20px;
+           display: block;
+        }
+        .button-default {
+           padding: 11px 20px; 
+        }
+        .header-button {
+            transform: translateY(-20px);
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        
+        .videos-button {
+            button {
+                &:not(:last-child) {
+                   margin-right:10px; 
+                }
+                i {
+                     font-size: 20px;
+                     margin-right: 10px;
+                }
+            }
+        }
+        .watchlist-button {
+            button {
+                margin-right:10px;
+                i {
+                     font-size: 20px;
+                     margin-right: 10px;
+                }
+            }
+            .watchlist-cancel , .watchlist-delete {
+                 display: none;
+            }
+            &.editor {
+              .watchlist-cancel , .watchlist-delete {
+                 display: block;
+             }  
+             .watchlist-edit {
+                display: none;
+             }
+            }
+        }
+    }
+}
+
+@media(max-width:767px) {
+    .profile-header {
+        .user-profile {
+            margin-right: 1rem;
+        }
+        .header-bottom {
+            .nav li {
+                margin-bottom: 5px;
+                a {
+                      padding-bottom: 5px;  
+                }
+                &:not(:last-child) {
+                    margin-right:15px;
+                    
+                }
+            }
+            .header-button {
+                transform: none;
+                justify-content: flex-start;
+                margin: 15px 0;
+            }
+        }
+    }
+}
+
+@media(max-width:480px) {
+    .profile-header {
+        .header-top {
+            display:block;
+        }
+        .user-profile {
+            margin-right: 0;
+            max-width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+}

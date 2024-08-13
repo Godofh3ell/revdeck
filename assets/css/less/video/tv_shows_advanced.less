@@ -1,0 +1,251 @@
+.jws-tv_shows-archive {
+    padding-bottom: 70px;
+}
+
+.tv_shows-nav {
+    text-align: right;
+    margin-bottom: 28px;
+    > div {
+        display:inline-block;
+        &:not(:last-child) {
+          margin-right: 25px;
+        }
+        a {
+            font-size: 14px;
+            line-height: 19.6px;
+            font-weight: bold; 
+            &.active {
+                color:var(--main);
+            }
+        }
+    }
+}
+
+.jws-animated-post  {
+            .loading {
+                 .jws-post-item {
+                    transform: none;
+                    opacity: 0;
+                    transition: 0.3s all;
+                }
+            } 
+            .jws-post-item {
+                transform: translateY(50px);
+                opacity: 0;
+                transition: 0.3s all;
+            }
+            .jws-animated {
+                transform: none;
+                opacity: 1;
+            }
+      
+   } 
+
+
+
+.jws-tv-shows-advanced-element {
+    .jws-post-item {
+        margin-bottom: 37px;
+        padding: 0 10px;
+    }
+    .post-media {
+        height: 100%;
+    }
+    .metro {
+         img {
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+         }
+        .columns-left {
+            .post-inner {
+               height: 420px; 
+            }
+        }
+        .columns-right {
+            .post-inner { 
+               height: 200px;  
+            }
+            .row > .jws-post-item:first-child {
+                display:none;
+            }
+        }
+    }
+    .layout3  {
+        .tv-shows-content {
+            position: absolute;
+            width: 100%;
+            left: 0;
+            bottom: 0;
+            padding: 26px 30px;
+        }
+        .post-media {
+            margin-bottom:0 !important;
+            a {
+                display:block;
+                width: 100%;
+                height: 100%;    
+                &:after {
+                      content:"";
+                      width: 100%;
+                      height: 100%;
+                      left: 0;
+                      top: 0; 
+                      position: absolute;
+                      background: linear-gradient(180deg, rgba(48,48,48,0.05) 46.18%, rgba(0,0,0,0.9) 100%);
+                } 
+            }
+           
+        }
+    }
+    .layout2 {
+        .post-inner {
+            .title {
+                margin-bottom:1px;
+            }
+            &:hover {
+               .post-media:before { opacity:1; }
+               .videos-play {opacity:1;} 
+            }
+        }
+        .post-media {
+            &:before {
+                content:"";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                background: linear-gradient(180deg, rgba(48, 48, 48, 0.3) 46.18%, rgba(0, 0, 0, 0.9) 100%), rgba(0,0,0,0);
+                z-index: 1;
+                transition: 0.3s all;
+            }
+        }
+        .videos-play {
+            z-index: 1;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+            opacity: 0;
+            color: var(--light);
+            i {
+                display: block;
+                font-size: 36px;
+                margin-bottom: 5px;
+            }
+        }
+        .tv-shows-cat {
+            a {
+                color:var(--body);
+                &:hover {
+                  color:var(--main);  
+                }
+            }
+        }
+    }
+    .post-inner {
+        position: relative;
+        .post-media {
+            overflow:hidden;
+            position: relative;
+            border-radius: 5px;
+            margin-bottom:20px;
+            img {
+                transition: .5s all;
+                width: 100%;
+            }
+        }
+        .title {
+            margin-bottom: -2px;
+        }
+        .seasions-numer {
+            font-size:14px;
+            line-height: 19.6px;
+        }
+        &:hover {
+           .post-media img {
+             transform: scale(1.1);
+           } 
+        }
+    }
+     .jws-nav-carousel {
+            > div {
+                width: 28px;
+                height: 76px;
+                background: rgba(0,0,0,0.2);
+                color: #ffffff;
+                position: absolute;
+                top: 43%;
+                margin-top: -38px;
+                text-align: center;
+                line-height: 76px;
+                border-radius: 5px;
+                font-size: 15px;
+                transition: 0.3s all;
+                cursor: pointer;
+                display: none;
+                &.jws-button-next {
+                    right:10px;
+                }
+                &.jws-button-prev {
+                    left:10px;
+                }
+                &:hover {
+                    background: var(--main);
+                }
+            }
+        }
+}
+
+@media(min-width:1024px) and (max-width:1500px) {
+    .post_sidebar.col-xl-2 {
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;   
+    }
+    .post_content.col-xl-10 {
+        -ms-flex: 0 0 80%;
+        flex: 0 0 80%;
+        max-width: 80%; 
+    }
+    .post_content .col-xl-20 {
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+}
+@media(max-width:1024px) { 
+    
+    .jws-tv-shows-advanced-element .metro .columns-right .post-inner {
+        height:auto;
+    }
+    
+}
+@media(max-width:767px) {
+    
+    .jws-tv-shows-advanced-element {
+        .metro .columns-right {
+        
+            .row > .jws-post-item:first-child {
+                display:block;
+            }
+            
+        }
+        .layout3 .tv-shows-content {
+            padding: 0;
+            margin-top: 10px;
+            position: unset;
+        }
+    }
+
+    .tv_shows-nav {
+        text-align: unset;
+        > div:not(:last-child) {
+            margin-right: 12px;
+        }
+    }
+    
+}

@@ -1,0 +1,152 @@
+.jws-videocat-list {
+    position: relative;
+    overflow: hidden;
+    .jws-videocat {
+        margin: 0 -7.5px; 
+    }
+
+    .layout1 {
+       .category-tab-item {
+            padding:0 7.5px;
+            width: auto;
+            margin: 20px 0;
+            a {
+                background: rgba(255,255,255,0.1);
+                border-radius: 30px;
+                padding: 13px 31px;
+                display: block;
+                font-size: var(--font-size-sm);
+                line-height: var(--line-height-sm);
+                text-transform: uppercase;
+                &:hover {
+                    background:var(--main);
+                    color: #ffffff;
+                }
+            }
+        } 
+       .owl-nav > button {
+            width: 28px;
+            height: 47px;
+            background: var(--background-item);
+            margin-top: -23px;
+            margin-left: -2.5px;
+            margin-right: -2.5px;
+            line-height: 47px !important;
+            &:hover {
+               background: var(--main); 
+            }
+            &.owl-next {
+              box-shadow: -15px 0px 20px rgba(0, 3, 28, 0.8);  
+            }
+            &.owl-prev {
+              box-shadow: 15px 0px 20px rgba(0, 3, 28, 0.8);
+            }
+            &.disabled {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+    }
+    .layout2 {
+        .category-tab-item  {
+            a {
+                display:block;
+                position: relative;
+                border-radius: 10px;
+                overflow: hidden;
+                &:after {
+                    content: "";
+                    background: rgba(0,0,0,0.2);
+                    width: 100%;
+                    height: 100%;
+                    left: 0;
+                    top: 0;
+                    position: absolute;
+                }
+                &:hover {
+                    img {
+                      transform: scale(1.1);
+                    }
+                }
+            }
+            span {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                font-weight: bold;
+                color: var(--heading);
+                z-index: 1;
+            }
+            img {
+                transition: 0.3s all;
+            }
+        }
+    }
+    .layout3 {
+        .category-inner {
+            display:block;
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+            height: 125px;
+            &:hover {
+              .category-images {
+                img {
+                 transform: rotate(2deg) translate(-7px, -10px);
+                }
+              }  
+            }
+        }
+        .overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;  
+        }
+        .category-content {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                padding: 19px 19px 13px;
+                h6 {
+                   margin-bottom: 3px;
+                }
+                > span {
+                    font-size: var(--font-size-sm);
+                    line-height: var(--line-height-sm);
+                    color: var(--heading);
+                }
+        }
+        .category-images {
+            position: absolute;
+            right: -7px;
+            bottom: -15px;
+            img {
+                width: 81px;
+                height: 105.85px;
+                border-radius: 5px;
+                transform: rotate(9.74deg);    
+                object-fit: cover;
+                object-position: center;
+                transition: 0.3s all;
+            }
+            > span {
+                border-radius: 5px;
+                transform: rotate(-8.109999999999999deg);
+                width: 81px;
+                height: 105.85px;
+                display: block;
+                position: absolute;
+                left: -18px;
+                top: 12px;
+            }
+        }
+    }
+    
+}
+
+.jws-videocat::-webkit-scrollbar {
+    display: none
+}

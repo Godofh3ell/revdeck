@@ -1,0 +1,118 @@
+.single-person {
+    .site-main {
+        margin-bottom:70px;
+        padding-top: 60px;
+    }
+    .jws-title {
+           margin-bottom: 33px; 
+    }
+   
+    .post-content {
+        margin-bottom: 10px;
+    }
+    .person-content {
+       margin-bottom: 48px;
+    }
+    .post-share {
+        margin-bottom: 50px;
+        label {
+            display:none;
+        }
+        a {
+             font-size: 20px; 
+             margin-right: 10px;  
+        }
+    }
+    .post-media {
+     margin-bottom: 25px;   
+    }
+    .person-info {
+        > h5 {
+            margin-bottom: 24px;
+        }
+        .info-field {
+            margin-bottom: 25px;
+            h6 {
+             margin-bottom: 6px;   
+            }
+        }
+    }
+}
+
+.person-know-history {
+    clear: both;
+    margin-bottom: 8px;
+    .history-nav {
+        li {
+            display:inline-block;
+            margin-right: 15px;
+            margin-bottom: 15px;
+            a {
+                display:block;
+                background: var(--background-item);
+                border-radius: 30px;
+                padding: 10px 20px;
+                &.active , &:hover {
+                    background:var(--main);
+                    color: var(--light);
+                }
+            }
+        }
+    }
+    
+}
+
+.person-know-slider {
+    margin-bottom: 6px;
+    > h6 {
+        margin-bottom: 20px;
+    }
+    .post-inner {
+        width:208px;
+    }
+}
+
+
+.history-content {
+    background: var(--background-item);
+    border-radius: 5px;
+    padding: 0px 2px;
+    .history-item {
+        padding: 22px 35px 22px 145px;
+        animation: fadeInLeft 0.5s both;
+        position: relative;
+        .years {
+           position:absolute;
+           left: 35px;
+        }
+        &:not(:last-child) {
+            border-bottom:1px solid #00031C;
+        }
+    }
+}
+
+@media(min-width:1024px) and (max-width:1500px) {
+    .single-person {
+        .site-main > .container > .row {
+            .col-xl-2 {
+                -ms-flex: 0 0 20%;
+                flex: 0 0 20%;
+                max-width: 20%;
+            }
+            .col-xl-10 {
+                -ms-flex: 0 0 80%;
+                flex: 0 0 80%;
+                max-width: 80%;
+            }
+        }
+    }
+}
+
+@media(max-width:767px) {
+    .single-person .post-share {
+       margin-bottom: 25px;
+    }
+    .history-content .history-item {
+        padding-left: 100px;
+    }
+}

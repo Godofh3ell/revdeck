@@ -1,0 +1,190 @@
+.single-episodes {
+  .sources-list {
+     margin-top:30px;
+  }   
+  .site-main {
+     padding-bottom: 60px; 
+  }
+  .videos_player {
+    margin-bottom: 65px;
+  }  
+  .title-related  {
+        margin-bottom: 17px;
+  }
+
+  .version-v2 {
+    > .container {
+        max-width:1570px;
+        padding: 0 10px !important;
+    }
+    .jws-related {
+        margin-top: 75px;
+    }
+    .episodes-top {
+        overflow: hidden;
+        margin-bottom: 65px;
+    }
+    .jws-episodes_advanced-element {
+          height: 100%;
+          .jws-pisodes_advanced-item {
+                margin-bottom: 15px;
+                padding-right: 5px;
+          }
+    }
+    .episodes-content {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        overflow-y: auto;
+        overflow-x: hidden;
+        .post-inner {
+            > a {
+              display: block;
+            }
+        }
+    }
+    .videos_player {
+        margin-bottom: 0;
+    }
+  }
+  .version-v1 {
+     .jws-episodes_advanced-element {
+        margin-top: 60px;
+        margin-bottom: 54px
+    }
+      .post-inner {
+        width:280px;
+      }  
+    > .container {
+        padding-left:0 !important;
+        padding-right: 0 !important;
+     }
+     .spisodes-top {
+        padding: 0 70px;
+     }
+     .episodes-bottom {
+        padding-left: 70px;
+     }
+     .jws-Reviews {
+       padding: 0 10px;
+       max-width: 1300px; 
+       margin: 0 auto;
+     }
+  }
+
+  .jws-title {
+       margin-bottom: 7px;
+        margin-top: 20px;
+        > h1 {
+          vertical-align: bottom;
+          display: inline-block;
+          margin-bottom: 5px;
+          margin-right: 24px;
+        }
+        .season {
+          margin-right: 34px;      
+        }
+        > h6 {
+           vertical-align: bottom;
+           display: inline-block; 
+        }
+    }
+    .jws-tags {
+        color: var(--heading);
+        margin-top: 28px;
+        label {
+            font-weight: bold;
+            margin-right: 21px;  
+        }
+    }
+      .jws-tool {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            max-width: 400px;
+            margin-top: 16px;
+        > div {
+            font-size: var(--font-size-sm);
+            line-height: var(--line-height-sm);
+            &:not(:last-child) {
+                margin-right:15px;
+            }
+            i {
+                margin-right: 2px;
+                font-size: 20px;
+            }
+            > a {
+                background: rgba(255, 255, 255, 0.1);
+                border-radius: 5px;
+                display: block;
+                padding: 5px 10px;
+                position: relative;
+                &:hover {
+                    background:var(--main);
+                    color:var(--light); 
+                    i {
+                       color:var(--light); 
+                    }
+                }
+               
+            }
+            .liked {
+                i {
+                   color:var(--main); 
+                }
+            }
+        }
+        .jws-likes {
+            flex-grow: 4;
+        }
+        .jws-share {
+            flex-grow:2;
+        }
+        .jws-watchlist {
+            flex-grow: 2;
+        }
+    }  
+    .jws-meta-info {
+       margin-bottom: 22px;
+       > div {
+         float:left;
+         margin-right: 15px;
+         font-size: var(--font-size-sm);
+         line-height: var(--line-height-sm); 
+       } 
+       i {
+        font-size:16px;
+        color:var(--heading);
+        margin-right: 6px;
+       }
+       .jws-raring-number {
+         color:var(--heading);   
+         i {
+            color:var(--main);
+         }
+       }
+    }
+}
+
+@media(max-width:1500px) {
+    .jws-episodes-heading {
+            padding-right: 0;
+    }
+    .single-episodes {
+        .version-v1 {
+            .spisodes-top {
+                padding:0 15px;
+            }
+            .episodes-bottom {
+               padding:0 15px; 
+            }
+        }
+        .version-v2 {
+            .jws-episodes_advanced-element {
+                height: 400px;
+                margin-top: 10px; 
+            }
+        }
+    }
+}

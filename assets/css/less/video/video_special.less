@@ -1,0 +1,36 @@
+.jws-video-special-element {
+    position: relative;
+    .jws-image {
+        img {
+            width:100%;
+        }
+    }
+    .video-player {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: 0.3s all;
+        opacity: 0;
+        > video {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            object-fit: cover;
+            object-position: top;
+        }
+    }
+    .change-speaker {
+        background: rgba(0,0,0,0.5);
+        bottom: 23px;
+        right: 22px;
+    }
+    &.video-play {
+       .video-player {
+         opacity:1;
+       } 
+    }
+}

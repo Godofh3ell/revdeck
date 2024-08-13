@@ -1,0 +1,128 @@
+.button-default {
+   .button-default{
+        background: linear-gradient(248.28deg, var(--btn-bgcolor) 9.54%, rgba(142, 97, 255, 0) 32.8%), radial-gradient(81.71% 279.87% at -16.57% -92%, var(--btn-bgcolor2) 28.69%, rgba(205, 219, 248, 0) 69.54%) , var(--btn-bgcolor3);
+        color:var(--btn-color);
+        border:0;
+        padding-top: 15px;
+        padding-right: 31px;
+        padding-bottom: 15px;
+        padding-left: 31px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        position: relative;
+        overflow: hidden;
+        display: inline-block;
+        transition: .2s ease;
+        border-radius: 10px;  
+        text-align: center;
+        > span {
+            z-index:1;
+            position: relative;
+        }
+      svg {
+        width: 1em;
+        height: 1em;
+        font-size: 24px;
+        vertical-align: middle;
+        margin-left: 7px;
+      }
+      &:hover {
+        box-shadow: 0px 15px 40px -8px fade(@shadow_button, 50%); 
+        transform: translateY(-3px);
+        color:var(--btn-color2);
+      } 
+      &.elementor-size-md {
+            padding-top: 17px;
+            padding-bottom: 17px;
+      }
+      
+   }
+}
+
+
+.button-custom {
+    border:0;
+    padding-top: 15px;
+    padding-right: 31px;
+    padding-bottom: 15px;
+    padding-left: 31px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    transition: .2s ease;
+    border-radius: 10px;
+    text-align: center; 
+    &:hover {
+        background: linear-gradient(248.28deg, var(--btn-bgcolor) 9.54%, rgba(142, 97, 255, 0) 32.8%), radial-gradient(81.71% 279.87% at -16.57% -92%, var(--btn-bgcolor2) 28.69%, rgba(205, 219, 248, 0) 69.54%) , var(--btn-bgcolor3) !important;
+        box-shadow: 0px 15px 40px -8px fade(@shadow_button, 50%); 
+        transform: translateY(-3px);
+    }  
+}
+
+
+.elementor-button {
+    border-radius:0;
+    position: relative;
+    &:hover {
+        .elementor-align-icon-right {
+               animation: bounceAlpha 1s both; 
+               -webkit-animation: bounceAlpha 1s both;
+        }
+        .elementor-align-icon-left {
+               animation: bounceAlpha2 1s both; 
+               -webkit-animation: bounceAlpha2 1s both;
+        }
+    }
+}
+.elementor-button-content-wrapper {
+      align-items: center;
+}
+
+.jws-button a#custom-buttonbr {
+    overflow: hidden;
+}
+
+.jws-watchlist-button {
+    .jws-watchlist {
+        a {
+            font-size: 0px;
+            width: 54px;
+            height: 54px;
+            background: #191c33;
+            border-radius: 10px;
+            display: block;
+            line-height: 54px;
+            text-align: center;
+           i {
+            font-size: 24px;
+           } 
+        }
+    }
+}
+.watchlist-add {
+    &.watchlisted {
+       i:before {
+          content: '\f33e';
+       } 
+       span {
+        display: none;
+       }
+       .added {
+         display: inline;
+       }
+    }
+    .added {
+        display: none;
+    }
+}
+.like-button {
+    &.liked  {
+       i:before {
+          content: '\f33e';
+       } 
+    }
+}

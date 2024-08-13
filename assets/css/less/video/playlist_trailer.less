@@ -1,0 +1,126 @@
+.jws_playlist_trailer_element  {
+    position: relative;
+    overflow: hidden;
+    .video-background {
+        position: relative;
+        img {
+            object-fit: cover;
+            object-position: center;
+            width: 100%;
+        }
+        .view-video {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            text-align: center;
+            margin: -35px -58px;
+            i {
+                font-size: 32px;
+            }
+            span {
+                display:block;
+                font-weight: bold;
+                color: var(--heading);
+                margin-top: 11px;
+            }
+        }
+    }
+    
+    .playlist-nav {
+        position: absolute;
+        right: 15px;
+        top:0;
+        max-width: 147px;
+        width: 20%;
+        height: 100%;
+        padding: 20px 0;
+       .slick-list {
+         height:100% !important;
+       }
+        .nav-item{
+          padding: 7.5px 0;
+          position: relative;
+          img {
+            opacity:0.6;
+            transition: 0.3s all;
+            border: 2px solid transparent;
+            cursor: pointer;
+            margin-left: 5px;
+            width: calc(100% e("-") 5px);
+          }
+          &:after {
+            content: "";
+            width: 0;
+            height: 0;
+            border-top: 9.5px solid transparent;
+            border-right: 5px solid var(--main);
+            border-bottom: 9.5px solid transparent;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            margin-top: -5px;
+            transition: 0.3s all;
+            opacity: 0;
+          }
+          &.slick-current {
+            img {
+               opacity:1;
+               border: 2px solid var(--main);
+            }
+            &:after {
+                opacity: 1;
+            }
+          }
+        }
+        .jws-nav-carousel {
+            > div {
+                position: absolute;
+                border-radius: 5px;
+                color: #ffffff;
+                width: 76px;
+                height: 28px;
+                line-height: 28px;
+                text-align: center;
+                background: rgba(0,0,0,0.2);
+                cursor: pointer;
+                left: 50%;
+                margin-left: -36px;
+                transition: 0.3s all;
+                &:hover {
+                   background: var(--main);
+                }
+            }
+            .nav_prev {
+             top:0;  
+             &:before {
+                transform: scale(-1);
+                display: block;
+             } 
+            }
+            .nav_next {
+             bottom:0;   
+            }
+            
+        }
+    }
+      
+}
+@media(max-width:767px) {
+    .jws_playlist_trailer_element .playlist-nav {
+        right: 0;
+        top: inherit;
+        max-width: unset;
+        width: 100%;
+        height: auto;
+        padding: 0;
+        bottom: 0;
+        position: relative;
+        .jws-nav-carousel {
+            display: none;
+        }
+        .nav-item:after {
+            display: none;
+        }
+    }
+    
+}

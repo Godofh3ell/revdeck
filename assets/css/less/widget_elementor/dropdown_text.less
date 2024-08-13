@@ -1,0 +1,83 @@
+.jws_dropdown_text {
+    i , span {
+        vertical-align: middle;
+        display: inline-block;
+        padding-top: 2px;
+    }
+    i{
+        font-size:16px !important;
+        margin-right:7px;
+        display: inline-block !important;
+    }
+   .drop_top {
+    margin: 0;
+    transition: 0.3s all;
+    cursor: pointer;
+    padding: 5px 0;
+    img {
+        vertical-align: middle;
+        margin-right: 5px;  
+        max-width: 24px;  
+    }
+    &:after {
+      content: '\f31a';
+      font-family: 'jws_icon';
+      margin-left: 3px; 
+      font-size:14px;
+      font-weight: bold;
+      vertical-align: middle;
+    }
+   } 
+   .dropdown_sub {
+        position: absolute;
+        background: rgba(0, 3, 28, 0.8);
+        border: 2px solid var(--secondary);
+        min-width: 100px;
+        opacity: 0;
+        transition: 0.3s all;
+        backdrop-filter: blur(5px);
+        border-radius: 10px;
+        pointer-events: none;
+        overflow: hidden;
+        z-index: 999;
+        .drop_item {
+            a {
+                color:var(--heading);
+                font-size:12px;
+                line-height: 25px;
+                display: block;
+                padding: 3px 14px;
+                transition: 0.1s;
+                img {
+                    width: 25px;
+                    margin-right: 15px;  
+                }
+                &:hover {
+                    color:var(--light);
+                    background:var(--main);
+                }
+            }
+        }
+   }
+   &.open , &:hover {
+        .dropdown_sub {
+            opacity: 1;
+            transform: translateY(0) !important;
+            -webkit-transform: translateY(0) !important;
+            pointer-events: auto; 
+        }
+   }
+}
+.submenu-bottom {
+   .jws_dropdown_text .dropdown_sub {
+     transform: translateY(15px);
+     -webkit-transform: translateY(15px);  
+   }  
+}
+.submenu-top {
+   .jws_dropdown_text .dropdown_sub {
+        bottom: 100%;
+        transform: translateY(-15px);
+        -webkit-transform: translateY(-15px); 
+   } 
+}
