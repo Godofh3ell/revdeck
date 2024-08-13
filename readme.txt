@@ -1,12 +1,12 @@
-=== StreamVid ===
-Contributors: the JWSThemes team
+=== revdeck ===
+Contributors: 
 Tested up to: 6.5.2
 Stable tag: 5.1.0
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
 == Description ==
-StreamVid is a WordPress video streaming theme with an attention-grabbing style that will capture everyone's attention right away. It is a tool with numerous useful features and ready-made page layouts for launching websites quickly.
+revdeck is a WordPress video streaming theme with an attention-grabbing style that will capture everyone's attention right away. It is a tool with numerous useful features and ready-made page layouts for launching websites quickly.
 
 == Changelog ==
 V5.1.0
@@ -103,7 +103,7 @@ V1.0.6
 
 = 1.0.1 =
 # Updated 1-Click import all demo data.
-# Added streamvid-child.zip child theme.
+# Added revdeck-child.zip child theme.
 # Optimized performance.
 # Updated plugins.
 
@@ -111,8 +111,8 @@ V1.0.6
 # Released: June 27, 2023
 
 == Copyright ==
-StreamVid WordPress Theme, Copyright 2019-2023 jwsuperthemes.com.
-StreamVid is distributed under the terms of the GNU GPL.
+revdeck WordPress Theme, Copyright 2019-2023 revdeck.com.
+revdeck is distributed under the terms of the GNU GPL.
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -124,10 +124,10 @@ but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License for more details.
 
-StreamVid is derived from the Chaplin Theme, Copyright 2019 Anders Norén
+revdeck is derived from the Chaplin Theme, Copyright 2019 Anders Norén
 Chaplin Theme is distributed under the terms of the GNU GPL version 2.0
 
-StreamVid bundles the following third-party resources:
+revdeck bundles the following third-party resources:
 
 Illustrations by Tammie Lister
 License: Creative Commons Zero (CC0), https://creativecommons.org/publicdomain/zero/1.0/
@@ -137,7 +137,7 @@ Copyright (c) 2016-2019 The Inter Project Authors (me@rsms.me)
 License: SIL Open Font License, 1.1, https://opensource.org/licenses/OFL-1.1
 Source: https://rsms.me/inter/
 
-Bespoke Icons Created For StreamVid
+Bespoke Icons Created For revdeck
 License: Creative Commons Zero (CC0), https://creativecommons.org/publicdomain/zero/1.0/
 List of bespoke icons:
 - Search icon
@@ -154,20 +154,16 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Source: WordPress Social Link Block (See wp-includes\blocks\social-link.php)
 
-Code from streamvid
-Copyright (c) 2018-2021 Jwsuperthemes.com
+Code from revdeck
+Copyright (c) 2018-2021 revdeck.com
 License: GPLv3
-Source: https://themeforest.net/user/jwsthemes/portfolio
+Source: 
 Included as part of the following classes and functions:
-- jwsthemes_SVG_Icons
-- jwsthemes_the_theme_svg()
-- jwsthemes_get_theme_svg()
-- jwsthemes_nav_menu_social_icons()
 
-Code from streamvid
-Copyright (c) 2016-2021 jwsuperthemes.com
+Code from revdeck
+Copyright (c) 2016-2021 revdeck.com
 License: GPLv3
-Source: https://themeforest.net/user/jwsthemes/portfolio
+Source: 
 Included as part of the following classes and functions:
 - jwsthemes_unique_id()
 
